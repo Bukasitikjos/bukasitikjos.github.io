@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/tampilan.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+</head>
+<body onload="refresh();">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom">
+        <div class="container"><a class="navbar-brand" href="index.html" style="background: url(&quot;assets/img/miku.jpg&quot;) left top /38px no-repeat ;font-family: Acme, sans-serif;font-size: 27px;">&nbsp; &nbsp; &nbsp; &nbsp;Rich Movies</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarResponsive"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          <b>Genre</b>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" onclick="hasilgenre('action')">Action</a></li>
+                          <li><a class="dropdown-item" onclick="hasilgenre('horror')">Horror</a></li>
+                          <li><a class="dropdown-item" onclick="hasilgenre('sports')">Sport</a></li>
+                          <li><a class="dropdown-item" onclick="hasilgenre('drama')">Drama</a></li>
+                        </ul>
+                      </div>
+                      &nbsp;&nbsp;&nbsp;&nbsp;<div class="dropdown">
+                        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          <b>Tahun</b>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" onclick="film('2021')">2021</a></li>
+                          <li><a class="dropdown-item" onclick="film('2020')">2020</a></li>
+                          <li><a class="dropdown-item" onclick="film('2019')">2019</a></li>
+                          <li><a class="dropdown-item" onclick="film('2018')">2018</a></li>
+                        </ul>
+                      </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white masthead">
+        <div class="masthead-content">
+            <div class="container">
+              <div class="animasi-teks">
+                <h1 class="masthead-heading mb-0">Selamat Datang</h1>
+              </div>
+                <h2 class="masthead-subheading mb-0">Silahkan Cari Filmnya</h2>
+                <br>
+                <div class="container-fluid">
+                  <div class="input-group mb-3">
+                      <input class="form-control me-2" id="input"type="search" placeholder="masukan judul" aria-label="Search">
+                      <button type="button" class="btn btn-warning"id="tombol"><b>cari</b></cari></button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
+    <section>
+        <form class="box">
+            <br>    
+            <h2 style="font-family:verdana" id='genrenya' class=text-center>Daftar Film</h2>
+               <div class="container">
+                <hr> 
+                 <div id="home" class="row">
+                 </div>
+                 <hr>
+                 <div class>
+                  <marquee bgcolor="yellow" style="font-size:14px; color:#800C0C;"><b>Jika Mempunyai Saran Dapat Langsung Menghubungi Admin Pada Bagian Bawah Agar Website Ini Dapat Semakin Berkembang Menjadi Lebih Baik Lagi Kedepannya. Terima Kasih ❤</b></marquee>
+                </div>
+               </div>
+           </form>
+    </section>
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <h3 class="text-center text-white m-0 medium">Hubungi Saya</h3>
+            <p class="text-center text-white m-0 medium">Oleh : Richi Andrew Serafintino</p>
+            <p class="text-center text-white m-0 medium">Email : richiandrew71@gmail.com</p>
+            <p class="text-center text-white m-0 medium">Instagram : richiandrew_</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src=tes.js></script>
+    <script src="dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>
